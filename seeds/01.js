@@ -9,11 +9,8 @@ exports.seed = function(knex, Promise) {
           name: "Demo User",
           email: "demouser@gmail.com",
           firstInterest: "science",
-          firstInterestTime: 0,
           secondInterest: "sports",
-          secondInterestTime: 0,
-          thirdInterest: "business",
-          thirdInterestTime: 0
+          thirdInterest: "business"
         }
       ]).then(() => {
         return knex.raw("ALTER SEQUENCE userinformation_id_seq RESTART WITH 2;");

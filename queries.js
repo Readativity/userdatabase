@@ -1,30 +1,30 @@
 const database = require("./database-connection");
 
       module.exports = {
-        list() {
-          return database("test").select();
+        list(db) {
+          return database(db).select();
         },
-        read(id) {
-          return database("test")
+        read(db, id) {
+          return database(db)
             .select()
             .where("id", id)
             .first();
         },
-        create(resolution) {
-          return database("test")
-            .insert(resolution)
+        create(db , body) {
+          return database(db)
+            .insert(body)
             .returning("*")
             .then(record => record[0]);
         },
-        update(id, resolution) {
-          return database("test")
+        update(database, id, resolution) {
+          return database(db)
             .update(resolution)
             .where("id", id)
             .returning("*")
             .then(record => record);
         },
-        delete(id) {
-          return database("test")
+        delete(db, id) {
+          return database(db)
             .delete()
             .where("id", id);
         }

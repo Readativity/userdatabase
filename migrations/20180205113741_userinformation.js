@@ -6,11 +6,8 @@ exports.up = function(knex, Promise) {
     table.text('name');
     table.text('email');
     table.text('firstInterest');
-    table.integer('firstInterestTime');
     table.text('secondInterest');
-    table.integer('secondInterestTime');
     table.text('thirdInterest');
-    table.integer('thirdInterestTime');
   })
 };
 
