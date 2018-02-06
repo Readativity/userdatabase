@@ -16,8 +16,8 @@ module.exports = {
       .returning("*")
       .then(record => record[0]);
   },
-  update(database, id, resolution) {
-    return database(database)
+  update(db, id, resolution) {
+    return database(db)
       .update(resolution)
       .where("id", id)
       .returning("*")
