@@ -7,15 +7,6 @@ const queries = require("./queries");
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get("/teachers", (request, response) => {
-  queries
-    .list1()
-    .then(teachers => {
-      response.json({ teachers });
-    })
-    .catch(console.error);
-});
-
 app.get("/users", (request, response) => {
   queries
     .list("userinformation")
@@ -46,8 +37,8 @@ app.get("/users/:id", (request, response) => {
 app.get("/activity/:id", (request, response) => {
   queries
     .read("activity", "_userId", request.params.id)
-    .then(profile => {
-      profile ? response.json({ profile }) : response.sendStatus(404);
+    .then(activity => {
+      activity ? response.json({ activity }) : response.sendStatus(404);
     })
     .catch(console.error);
 });
