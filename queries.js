@@ -7,8 +7,7 @@ module.exports = {
   read(db, column, id) {
     return database(db)
       .select()
-      .where(column, id)
-      .first();
+      .where(column, id);
   },
   create(db, body) {
     return database(db)
