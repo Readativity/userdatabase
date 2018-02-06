@@ -36,7 +36,7 @@ app.get("/activity", (request, response) => {
 
 app.get("/users/:id", (request, response) => {
   queries
-    .read("userinformation", request.params.id)
+    .read("userinformation", "id", request.params.id)
     .then(profile => {
       profile ? response.json({ profile }) : response.sendStatus(404);
     })
@@ -45,7 +45,7 @@ app.get("/users/:id", (request, response) => {
 
 app.get("/activity/:id", (request, response) => {
   queries
-    .read("activity", request.params.id)
+    .read("activity", "_userId", request.params.id)
     .then(profile => {
       profile ? response.json({ profile }) : response.sendStatus(404);
     })
@@ -73,8 +73,8 @@ app.post("/activity", (request, response) => {
 app.put("/users/:id", (request, response) => {
   queries
     .update("userinformation", request.params.id, request.body)
-    .then(goals => {
-      response.json({ goals });
+    .then(profile => {
+      response.json({ profile });
     })
     .catch(console.error);
 });
@@ -82,8 +82,8 @@ app.put("/users/:id", (request, response) => {
 app.put("/activity/:id", (request, response) => {
   queries
     .update("activity", request.params.id, request.body)
-    .then(goals => {
-      response.json({ goals });
+    .then(activity => {
+      response.json({ activity });
     })
     .catch(console.error);
 });

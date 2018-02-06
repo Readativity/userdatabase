@@ -4,10 +4,10 @@ module.exports = {
   list(db) {
     return database(db).select();
   },
-  read(db, id) {
+  read(db, column, id) {
     return database(db)
       .select()
-      .where("id", id)
+      .where(column, id)
       .first();
   },
   create(db, body) {
