@@ -54,13 +54,13 @@ app.post("/activity", (request, response) => {
 });
 
 app.put("/users/:id", (request, response) => {
-    queries.update1("userinformation", request.params.id, request.body).then(goals => {
+    queries.update("userinformation", request.params.id, request.body).then(goals => {
         response.json({goals});
     }).catch(console.error);
 });
 
 app.put("/activity/:id", (request, response) => {
-    queries.update1("activity", request.params.id, request.body).then(goals => {
+    queries.update("activity", request.params.id, request.body).then(goals => {
         response.json({goals});
     }).catch(console.error);
 });
