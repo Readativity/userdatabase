@@ -18,7 +18,7 @@ exports.seed = function (knex, Promise) {
         headline: "BRIEF-Winsan (Shanghai) Medical Science and Technology to sell stake and creditor's rights in unit for totaling 96.8 mln yuan",
         image: "https://s4.reutersmedia.net/resources_v2/images/rcom-default.png",
         timeReading: 15,
-        date: "7 Wednesday February 2018",
+        date: "5 Monday February 2018",
         _userId: 1,
       },
       {
@@ -28,7 +28,7 @@ exports.seed = function (knex, Promise) {
         headline: "Sports retail stocks jump after upbeat reports",
         image: "https://s4.reutersmedia.net/resources/r/?m=02&d=20171117&t=2&i=1210245390&w=&fh=545px&fw=&ll=&pl=&sq=&r=LYNXMPEDAG0ZV",
         timeReading: 30,
-        date: "8 Thursday February 2018",
+        date: "4 Sunday February 2018",
         _userId: 1,
       },
       {
@@ -38,7 +38,7 @@ exports.seed = function (knex, Promise) {
         headline: "PRESS DIGEST- British Business - Dec 21",
         image: "https://s4.reutersmedia.net/resources_v2/images/rcom-default.png",
         timeReading: 5,
-        date: "9 Friday February 2018",
+        date: "3 Saturday February 2018",
         _userId: 1,
       },
       {
@@ -48,7 +48,7 @@ exports.seed = function (knex, Promise) {
         headline: "Business Live: Westfield takeover - BBC News",
         image: "http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1",
         timeReading: 25,
-        date: "10 Saturday February 2018",
+        date: "2 Friday February 2018",
         _userId: 1,
       },
       {
@@ -68,7 +68,7 @@ exports.seed = function (knex, Promise) {
         headline: "Frederick Wilmot-Smith: Environmental Law",
         image: "https://cdn.lrb.co.uk/assets/covers/q/cov4003.jpg?1517403196",
         timeReading: 5,
-        date: "7 Wednesday February 2018",
+        date: "5 Monday February 2018",
         _userId: 1,
       },
       {
@@ -78,7 +78,7 @@ exports.seed = function (knex, Promise) {
         headline: "Nick Richardson: Chinese SF",
         image: "https://cdn.lrb.co.uk/assets/covers/q/cov4003.jpg?1517403196",
         timeReading: 30,
-        date: "8 Thursday February 2018",
+        date: "4 Sunday February 2018",
         _userId: 1,
       },
       {
@@ -88,7 +88,7 @@ exports.seed = function (knex, Promise) {
         headline: "Special Webcast: Cyber Threat Intelligence Skills and Usefulness: SANS CTI Survey Results, Part 2",
         image: "http://www.edweek.org/images/educationweek-facebook.png",
         timeReading: 10,
-        date: "9 Friday February 2018",
+        date: "3 Saturday February 2018",
         _userId: 1,
       },
       {
@@ -98,7 +98,7 @@ exports.seed = function (knex, Promise) {
         headline: "Herbal supplement kratom contains opioids, regulators say",
         image: "http://www.sfgate.com/img/pages/article/opengraph_default.png",
         timeReading: 15,
-        date: "10 Saturday February 2018",
+        date: "2 Friday February 2018",
         _userId: 1,
       },
       {
